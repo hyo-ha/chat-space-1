@@ -4,10 +4,11 @@
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 ### Association
 - has_many :chats
-- has-many: groups, through: :groups_users
+- has_many :groups_users
+- has-many :groups, through: :groups_users
 
 ## chatsテーブル
 |Column|Type|Options|
@@ -23,10 +24,11 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|groupname|string|null: false|
+|name|string|null: false|
 ### Association
-- has_many: chats
-- has_many: users, through: :groups_users
+- has_many :chats
+- has_many :groups_users
+- has_many :users, through: :groups_users
 
 ## groups_usersテーブル
 |Column|Type|Options|
