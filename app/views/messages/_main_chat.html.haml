@@ -1,0 +1,33 @@
+.main-chat
+  .group-info
+    .group-info__group
+      %h1.group-info__group__name
+        test
+      %p.group-info__group__member
+        Member : hanano
+    .group-info__edit-btn
+      = link_to "#" do
+        edit
+  .message-list
+    .message-list__info
+      %p.message-list__info__user-name
+        hanano
+      %p.message-list__info__date
+        2020/6/10(Wed) 22:00:07
+    %p.message-list__message
+      おはよう！
+    .message-list__info
+      %p.message-list__info__user-name
+        hanano
+      %p.message-list__info__date
+        2020/6/10(Wed) 22:06:07
+    %p.message-list__message
+      お疲れ様！
+  .message-form
+    %form.message-form__new-message
+      .message-form__new-message__textarea
+        %input.message-form__new-message__textarea__text{type: "text",  name: "text", placeholder: "type a message"}
+        %label{class: "message-form__new-message__textarea__image"}
+          = icon('far', 'image',)
+          %input{type: "file", name: "image"}
+      %input.message-form__new-message__send-btn{type: "submit", value: "Send"}
