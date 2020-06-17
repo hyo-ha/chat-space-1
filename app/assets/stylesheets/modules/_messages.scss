@@ -44,18 +44,23 @@ $btn-color: #38aef0;
     .group-list {
       background-color: #2f3e51;
       height: calc(100vh - 100px);
-      color: $side_font_color;
       padding: 0 20px;
       font-weight: bold;
-      &__group-name {
-        font-size: 15px;
-        padding-top: 20px;
-        padding-bottom: 5px;
-      }
-      &__message {
-        font-size: 11px;
-        padding-bottom: 40px;
-      }
+      &__group {
+        a{
+          text-decoration: none;
+          color: $side_font_color;
+        }
+        &__group-name {
+          font-size: 15px;
+          padding-top: 20px;
+          padding-bottom: 5px;
+        }
+        &__message {
+          font-size: 11px;
+          padding-bottom: 40px;
+        }
+      }       
     }
   }
   .main-chat {
