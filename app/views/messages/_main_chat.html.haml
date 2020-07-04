@@ -21,7 +21,7 @@
           = f.label :image, class: "message-form__new-message__textarea__image" do
             = icon('far', 'image')
             = f.text_field :image, type: "file"
-        = f.submit 'Send', class: 'message-form__new-message__send-btn'
+        = f.submit 'Send', class: 'message-form__new-message__send-btn', id: 'form-submit'
 
     -# %form.message-form__new-message
     -#     .message-form__new-message__textarea
