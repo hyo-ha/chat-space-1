@@ -107,25 +107,27 @@ $btn-color: #38aef0;
       height: calc(100vh - 100px - 90px);
       padding-left: 40px;
       overflow: scroll;
-      &__info {
-        display: flex;
-        padding-top: 35px;
-        padding-bottom: 12px;
-        &__user-name {
-          color: #333333;
-          font-size: 16px;
-          font-weight: bold;
+      &__message{
+        &__info {
+          display: flex;
+          padding-top: 35px;
+          padding-bottom: 12px;
+          &__user-name {
+            color: #333333;
+            font-size: 16px;
+            font-weight: bold;
+          }
+          &__date {
+            color: #999999;
+            font-size: 12px;
+            margin-left: 5px;
+          }
         }
-        &__date {
-          color: #999999;
-          font-size: 12px;
-          margin-left: 5px;
+        &__text {
+          color: #434A54;
+          font-size: 14px;
+          padding-bottom: 11px;
         }
-      }
-      &__message {
-        color: #434A54;
-        font-size: 14px;
-        padding-bottom: 11px;
       }
     }
     .message-form {
